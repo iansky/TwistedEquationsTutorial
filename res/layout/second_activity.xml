@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/editComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:ems="10"
+        android:hint="@string/comment"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/editOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:ems="10"
+        android:hint="@string/other"
+        android:inputType="numberPassword"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/commentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_comment"
+        android:onClick="addComment" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>

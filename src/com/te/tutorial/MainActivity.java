@@ -20,6 +20,14 @@ package com.te.tutorial;
  *       rebuilt.
  *    4) added code to trace the activity state.  Look for tag:MainActivity:
  *       There are also 'Toast' messages to show this same data.
+ * lesson 6:
+ *       Added a second activity.  Its layout has a button, 3 text views
+ *       and 3 edit views.  The second activity button code is written so
+ *       contents of the edit text views will be copied into the associated
+ *       text views when it is clicked.
+ *       
+ *       "Press me" button code has been removed.  Next lesson this will be
+ *       used to launch the second activity.
  */
 
 import android.app.Activity;
@@ -47,7 +55,7 @@ public class MainActivity extends Activity {
 	protected void onStart() {
 		super.onStart();
         // get curent method name in Java.
-		String method 
+		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();
@@ -57,7 +65,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onRestart() {
 		super.onRestart();
-		String method 
+		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();
@@ -67,7 +75,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		String method 
+		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();
@@ -77,7 +85,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onPause() {
 		super.onPause();
-		String method 
+		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();
@@ -87,7 +95,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onStop() {
 		super.onStop();
-		String method 
+		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();
@@ -97,7 +105,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		String method 
+		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();
@@ -107,7 +115,7 @@ public class MainActivity extends Activity {
     // in lesson 5.
     public void PressMeButtonClick(View v) {
         TextView tv = (TextView) findViewById(R.id.text_hello);
-		String method 
+		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();

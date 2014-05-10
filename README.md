@@ -37,3 +37,11 @@ lesson 5:
    4) added code to trace the activity state.  Look for tag:MainActivity:
       There are also 'Toast' messages to show this same data.
 
+Sat May 10 14:56:58 PDT 2014
+tutorial 6:
+    Added a second activity with a button, three edit text items and
+    three text views.  Second activity will set the values in the
+    text views to the values in the associated edit text views when
+    the user presses the button.
+
+
