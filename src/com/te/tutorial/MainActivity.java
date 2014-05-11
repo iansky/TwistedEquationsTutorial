@@ -31,6 +31,7 @@ package com.te.tutorial;
  */
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -54,7 +55,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onStart() {
 		super.onStart();
-        // get curent method name in Java.
+        // get current method name in Java.
 		String method // java code to get current method 
             = Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
@@ -114,20 +115,13 @@ public class MainActivity extends Activity {
     // This was moved from the over-ride in the Action onCreate method
     // in lesson 5.
     public void PressMeButtonClick(View v) {
-        TextView tv = (TextView) findViewById(R.id.text_hello);
 		String method // java code to get current method 
-            = Thread.currentThread().getStackTrace()[2].getMethodName();
+        	= Thread.currentThread().getStackTrace()[2].getMethodName();
 		Toast.makeText(this, TAG + method, Toast.LENGTH_SHORT)
 			.show();
-		Log.i(TAG, method);
-
-        String current = tv.getText().toString();
-        String new_string
-            = (current != null 
-                    && current.equals(getString(R.string.hello_android))
-                ? getString(R.string.hello_world)
-                : getString(R.string.hello_android)
-                );
-        tv.setText(new_string);
+		String seeMe = ((TextView)findViewById(R.id.see_me)).getText().toString();
+    	Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+    	intent.putExtra("PressMeString", seeMe);
+    	startActivity(intent);
     }
 }

@@ -44,4 +44,17 @@ tutorial 6:
     text views to the values in the associated edit text views when
     the user presses the button.
 
+Sat May 10 15:51:48 PDT 2014
+    Added code to PressMe button to launch the SecondActivity and
+    got an exception on launch.  Got a message saying
+        E/AndroidRuntime(31113): Caused by:
+        android.content.ActivityNotFoundException: Unable to find
+        explicit activity class
+        {com.te.tutorial/com.te.tutorial.SecondActivity};
+        have you declared this activity in your AndroidManifest.xml?
+    Had to add code to AndriodManifest describing the SecondActivity.
+    Changed code in the PressMe button to send the contents of the
+    MainActivity text view via the intent to the SecondActivity when
+    it's started and put it in that activity's textName window.
+
 
