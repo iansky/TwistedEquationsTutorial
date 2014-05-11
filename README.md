@@ -73,3 +73,8 @@ tutorial 8, 9 and 10: Action Bar And Menus Parts 1, 2 and 3.
     SecondActivity to 'inflate' its menu.  This allows us to
     give SecondActivity a custom menu yet the menu handlers are
     still in the BaseActivity class.
+Sun May 11 09:04:25 PDT 2014
+    Added nested menu items to the twitter menu.  Currently these
+    only show up in the default case for the menu listener and get 
+    posted via Toast.
+

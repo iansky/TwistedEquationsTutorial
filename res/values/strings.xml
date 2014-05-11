@@ -14,5 +14,13 @@
     <string name="twitter">Twitter</string>
     <string name="facebook">Facebook</string>
     <string name="refresh">Refresh</string>
+    <string name="twitter_1">Twitter level 1</string>
+    <string name="twitter_2">Twitter level 2</string>
+    <string name="twitter_3">Twitter level 3</string>
+    <string name="twitter_4">Still more twitter</string>
+    <string name="twitter_4_1">Twitter level 4.1</string>
+    <string name="twitter_4_2">Twitter level 4.2</string>
+    <string name="twitter_4_3">Twitter level 4.3</string>
+    <string name="twitter_4_4">Twitter level 4.4</string>
         
 </resources>
