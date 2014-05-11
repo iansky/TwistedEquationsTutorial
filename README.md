@@ -56,5 +56,20 @@ Sat May 10 15:51:48 PDT 2014
     Changed code in the PressMe button to send the contents of the
     MainActivity text view via the intent to the SecondActivity when
     it's started and put it in that activity's textName window.
+Sat May 10 19:19:23 PDT 2014
+tutorial 8, 9 and 10: Action Bar And Menus Parts 1, 2 and 3.
+    Added menu items to the action bar.
+    Changed the twitter menu item to use an image.
+    Created icons from item downloaded from therecap.com
+        xxhdpi/twitter_icon.png 144x144
+        xhdpi/twitter_icon.png  96x96
+        hdpi/twitter_icon.png   72x72
+        mdpi/twitter_icon.png   48x48
+    Added new BaseAction that extends Action.  MainAction and
+    SecondAction then extend BaseAction.  This allows all the
+    Action UI items to share the same Action bar and Menu Items.
 
-
+    Added a 'second_activity.xml' file and associated code in 
+    SecondActivity to 'inflate' its menu.  This allows us to
+    give SecondActivity a custom menu yet the menu handlers are
+    still in the BaseActivity class.

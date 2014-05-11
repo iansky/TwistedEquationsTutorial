@@ -6,13 +6,19 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="19"
+        />
 
+    <!-- uiOptions=splitActionBarWhenNarrow causes a second action
+         bar to appear at the bottom of the activity when the top
+         action bar overflows. -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+        android:uiOptions="splitActionBarWhenNarrow"
+        >
         <activity
             android:name="com.te.tutorial.MainActivity"
             android:label="@string/app_name" >

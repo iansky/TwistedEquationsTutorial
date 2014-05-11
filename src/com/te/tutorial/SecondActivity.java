@@ -4,12 +4,13 @@ package com.te.tutorial;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SecondActivity extends Activity {
+public class SecondActivity extends BaseActivity {
 	private static String intentString;
 
     @Override
@@ -31,6 +32,15 @@ public class SecondActivity extends Activity {
         setContentView(R.layout.second_activity);
         ((TextView)findViewById(R.id.textName)).setText(intentString);
     }
+    // Give the second activity a unique menu -- different than the menu in
+    // the main activity.
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.second_activity, menu);
+		return true;
+	}
+
     public void addComment (View view) {
         // Set the TextView windows to the new values from the EditText
         // windows.

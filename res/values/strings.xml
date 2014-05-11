@@ -11,5 +11,8 @@
     <string name="other">Other</string>
     <string name="add_comment">Add a comment</string>
     <string name="blank"></string>
-
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="refresh">Refresh</string>
+        
 </resources>
